@@ -1,34 +1,338 @@
+	body{
+		margin:0;
+		width:100%;
+		padding:0;
+		background-color:#f1f1f1;
+}
 
-body {
-  font-family: Arial, serif;
+.container-fluid{
+	border-radius: 15px 50px; 
+}
+/* ======================================================
+/* navbar */
+.name {
+    font-size: 20px;
+	color: #C4C5C3;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.overlay {
+	height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
   text-align: center;
-  color: #343a40;
-  font-size: 22px;
+  margin-top: 30px;
+	
 }
 
-h1 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  margin-top: 40px;
-  font-size: 48px;
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-p {
-  margin-top: 80px;
+.overlay a:hover, .overlay a:focus {
+  color:#fff;
+	  font-size:20px;
 }
 
-button {
-  margin-top: 40px;
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
-.page-header {
-  background-color: #00bda5;
-  padding-top: 40px;
-  padding-bottom: 80px;
-  color: #ffffff;
+@media only screen and (min-width: 320px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+	.overlay {
+  height: 30%;
+	}
+	
+	.subTopic{
+	display:none;
+	}
 }
 
-#image img {
-  height: 200px;
-  margin-top: 60px;
+@media only screen and (min-width: 768px) {
+.overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+	.overlay {
+  height: 30%;
+	}
+	
+	.subTopic{
+	display:none;
+	}
 }
+
+@media only screen and (min-width: 1200px) {
+.overlay-content {
+	color: #fff;
+	font-size:20px;
+    padding:20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+	.subTopic{
+		font-size:15px;
+		color:#fff;
+		padding:20px;
+	}
+	.subTopic:hover{
+		background-color: #02ACEE;
+	}
+	.subTopic{
+	display:inline;
+	}
+}
+/*========================================*/
+/* FirstSlideImage */
+
+.column {
+  	float: center;
+  	width:50%;
+  	height: 300px;
+  	color:#fff;
+  	font-size:15px;
+  	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-radius: 15px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+	a{
+	font-size:10px;
+}
+	.text{
+	font-size:5px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#carousel-indicators, .carousel-indicators{
+	padding-right: 100px;
+	padding-left: 100px;
+}
+ 
+@media only screen and (min-width: 768px) {
+#carouselExampleSlidesOnly {
+	padding-right: 80px;
+    padding-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+	font-size:15px;
+	background-color:#0074AB;
+	border-radius: 15px 50px;
+}	
+	a{
+	font-size:10px;
+}
+	.text{
+	font-size:20px;
+}
+.carousel-indicators{
+	padding-right: 250px;
+	padding-left: 10px;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+#carouselExampleSlidesOnly {
+	padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+	font-size:20px;
+	background-color:#0074AB;
+	max-width:100%;
+	border-radius: 15px 50px;
+}
+	a{
+	font-size:15px;
+}
+	.text{
+	font-size:30px;
+}
+.carousel-indicators{
+	padding-right: 350px;
+	padding-left: 10px;
+}
+} 
+/* =========================
+/* middleContains */
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  color:black;
+  background-color: #0074AB;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/* ========================================== */
+
+.contains1{
+	padding-bottom:50px;
+	padding-top:50px;
+	 border-radius: 15px 50px;
+	background-color:#DAD7D7 ;
+	width:100%;
+}
+#column{
+	width:20%;
+	padding-left:50px;
+}
+#column1{
+	width:30%;
+	padding-left:200px;
+	padding-bottom:20px;
+	height:auto;
+
+}
+/* ========================================== */
+.row {
+    margin: 1px;
+}
+
+.card-img-top{
+border-radius: 50%;
+	width:80%;
+}
+
+.card-title{
+	font-size:13px;
+	color:black;
+	font-weight:700;
+}
+.card-text {
+	font-size:10px;
+	position:center;
+	color: black;
+}
+
+.button {
+  background-color: #0074AB
+  border: none;
+  color: white;
+  padding: 2px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 8px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button {
+  background-color: 0074AB; 
+  color: #fff; 
+  border: 2px solid #0074AB;
+}
+
+.button:hover {
+  background-color: #0074AB;
+  color: #fff;
+}
+
+/* ================================
+map */
+.contains{
+	background-color:#DAD7D7;
+	 border-radius: 15px 50px;
+}
+.col-md-4{
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* ================================ */
+
+.footer {
+  position: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1px;
+  background-color: black;
+  text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+} 
+.title1{
+	color:white;
+	float:left;
+	padding-left:10px;
+}
+.title2{
+	color:white;
+	float:center;
+	padding-right:300px;
+	
+}
+@media only screen and (min-width: 768px) {
+.footer{
+font-size:10px;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+.footer{
+font-size:12px;
+}
+}
+
