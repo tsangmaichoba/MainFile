@@ -1,23 +1,90 @@
 <html lang="en">
 <head>
     <% include ../helpers/head %>
+	 <% include ../helpers/navbars %>
 </head>
 
 <body>
-  <!-- the classes 'page-header' and 'btn btn-dark' create bootstrap components.  -->
-  <!-- Check out more components here: http://getbootstrap.com/components/ -->
-  <div class="page-header">
+	<br>
+	<div id="carouselExampleSlidesOnly" class="container-fluid" data-ride="carousel">
+				<div class="carousel-inner">
+							<div class="row">
+								
+								<div class="carousel-item active">
+									<div class="columnImg" style="background-color:#56BEF6;">
+										  <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" class="d-block w-100" id="img" alt="...">
+									</div>
+									<div class="column" style="background-color:#56BEF6;">
+										<h2 class="text">What is Lorem Ipsum?</h2>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p> <a style="color:black;" href="#" role="button"><h9>CONTINUE READING >></h9></a>
 
-  
-    <h1>My Web App</h1>
-  </div>
+									</div>
+								</div>
+								
+									<div class="carousel-item">
+										<div class="columnImg" style="background-color:#56BEF6;">
+											  <img src="https://images.unsplash.com/flagged/photo-1560408582-aabf80b149a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" class="d-block w-100" id="img" alt="...">
+										</div>
+										<div class="column" style="background-color:#56BEF6;">
+											<h2 class="text">Why do we use it?</h2>
+											<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is</p> <a style="color:black;" href="#" role="button"><h9>CONTINUE READING >></h9></a>
+										</div>
+									</div>	
+								
+							<div class="carousel-item">		
+									<div class="columnImg" style="background-color:#56BEF6;">
+										<img src="https://images.unsplash.com/photo-1503676685182-2531a01b5b5c?ixlib=rb-				1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" class="d-block w-100" id="img" alt="...">
+									</div>
+									<div class="column" style="background-color:#56BEF6;">
+											<h2 class="text">Where does it come from?</h2>
+											<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p> <a style="color:black;" href="#" role="button"><h9>CONTINUE READING >></h9></a>
+									</div>
+							</div>
+							
+	<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	</ol>							
+							
+					</div>
+					
+				</div>
+	</div>
+<!-- ========================================-->
+	<br>
+	<div class="container-fluid">
+		<div class="row">
+			  <div class="column1">
+				<div class="card1"><h9>Brief History</h9></div>
+				  <span><img src="https://images.unsplash.com/photo-1503676685182-2531a01b5b5c?ixlib=rb-				1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" class="d-block w-100" id="img" alt="..."></span>
+			  </div>
+			  <div class="column1">
+				  <div class="card1"><h9>Talent Gallery</h9></div>
+					<span><img src="https://images.unsplash.com/flagged/photo-1560408582-aabf80b149a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" class="d-block w-100" id="img" alt="..."></span>
+				</div>
+			  <div class="column1">
+				  <div class="card1"><h9>Updates</h9></div>
+					  <span><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" class="d-block w-100" id="img" alt="..."></span>
+				 </div>
 
-  <p>Click on the button for a surprise.</p>
-
-  <button onClick="showPicture()" class="btn btn-dark">Click me</button>
-
-  <div id="image"></div>
-  
+				<div class="column1">
+					<div class="card1" style="background-color:#DAD7D7;">
+			  			<img class="image" src="https://images.unsplash.com/photo-1569441785818-135e265ee961?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="Avatar">
+						<b><h6 class="message" style="color:#000000;">Principal's Message</h6></b>
+						<p class="message1" style="color:#000000;">sssss ffff ddddd sssssssssssss dddddd</p>
+				</div>							
+				<div class="card1" style="background-color:#DAD7D7;">
+				<img class="image" src="https://images.unsplash.com/photo-1569441785818-135e265ee961?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="Avatar">
+					<h6 class="message" style="color:#000000;"><b>Chairman's Message</b></h6>
+					<p class="message1" style="color:#000000;">sssss ffff ddddd sssssssssssss dddddd</p>
+				</div>
+		</div>
+	</div>
+</div>	
+	
+	
+	<br>
 </body>
 
 </html>

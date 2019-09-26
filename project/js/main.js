@@ -1,9 +1,24 @@
-function showPicture(){
-  // use jQuery ($ is shorthand) to find the div on the page and then change the html
-  // 'rounded-circle' is a bootstrap thing! Check out more here: http://getbootstrap.com/css/
-  $("#image").append('<img class="rounded-circle" src="images/high-five.gif"/>');
-  $("p").html("High five! You're building your first web app!");
+// /* Open when someone clicks on the span element */
+// function openNav() {
+//   document.getElementById("myNav").style.width = "100%";
+// }
 
-  // jQuery can do a lot of crazy stuff, so make sure to Google around to find out more
-  
-}
+// /* Close when someone clicks on the "x" symbol inside the overlay */
+// function closeNav() {
+//   document.getElementById("myNav").style.width = "0%";
+// }
+
+
+
+// <script>
+// $('.carousel').carousel({
+//   interval: 5000
+// })
+// </script>
+
+
+// <script>
+// $('#myCarousel').on('slide.bs.carousel', function () {
+//    transition: transform 2s ease, opacity .5s ease-out
+// })
+// </script>
